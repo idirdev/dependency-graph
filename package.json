@@ -1,0 +1,28 @@
+{
+  "name": "dependency-graph",
+  "version": "1.0.0",
+  "description": "Dependency graph analyzer for Node.js projects - detect circular deps, unused packages, and duplicates",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "bin": {
+    "depgraph": "dist/index.js"
+  },
+  "scripts": {
+    "build": "tsc",
+    "dev": "ts-node src/index.ts",
+    "clean": "rm -rf dist",
+    "prepublishOnly": "npm run build"
+  },
+  "keywords": ["dependency", "graph", "analyzer", "circular", "unused", "node"],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "commander": "^9.5.0",
+    "chalk": "^4.1.2"
+  },
+  "devDependencies": {
+    "typescript": "^4.9.5",
+    "@types/node": "^18.11.18",
+    "ts-node": "^10.9.1"
+  }
+}
