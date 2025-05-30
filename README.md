@@ -139,3 +139,26 @@ src/
 ## License
 
 MIT
+
+---
+
+## Français
+
+**dependency-graph** est un outil d'analyse de graphes de dépendances pour les projets Node.js. Il résout et affiche l'arbre complet des dépendances, détecte les dépendances circulaires via un algorithme DFS, repère les packages inutilisés en scannant les fichiers sources, et identifie les versions dupliquées — avec plusieurs formats de sortie (arbre, JSON, Graphviz DOT, Mermaid).
+
+### Installation
+
+```bash
+npm install
+npm run build
+```
+
+### Utilisation
+
+```bash
+# Analyser le répertoire courant
+npx depgraph analyze
+
+# Analyse complète avec toutes les vérifications
+npx depgraph analyze --dev --circular --unused --duplicates --format tree
+```
