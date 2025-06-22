@@ -162,3 +162,4 @@ npx depgraph analyze
 # Analyse complète avec toutes les vérifications
 npx depgraph analyze --dev --circular --unused --duplicates --format tree
 ```
+
